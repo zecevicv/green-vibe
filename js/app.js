@@ -70,7 +70,7 @@ if (document.querySelector('.process')) {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1
+        slidesPerView: 1.1
       },
       1024: {
         slidesPerView: 2.5
