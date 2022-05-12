@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="he-IL" dir="rtl">
+<html lang="en-US">
 
 <head>
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title></title>
+  <meta name="description" content="green-vibe">
+  <title>Green Vibe</title>
 
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -21,12 +24,390 @@
   <link rel="icon" href="img/favicon.png">
 </head>
 
-<body>
+<body class="home-page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <div class="icon-white"><img class="lazy" data-src="img/global/logo-white.svg" alt="green-vibe-img"></div>
+          <div class="icon-black"><img class="lazy" data-src="img/global/logo-black.svg" alt="green-vibe-img"></div>
+        </a>
+      </div>
+      <!-- Menu -->
+      <div class="header-menu">
+        <ul class="header-links f-d-20">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Process</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+      <!-- Action -->
+      <div class="header-action">
+        <div class="header-btn d-desktop">
+          <a href="#" class="btn btn-primary">Let's talk</a>
+        </div>
+        <div class="header-hamburger d-mobile">
+          <a href="#">
+            <div class="icon-white"><img class="lazy" data-src="img/global/hamburger-white.svg" alt="green-vibe-img"></div>
+            <div class="icon-black"><img class="lazy" data-src="img/global/hamburger-black.svg" alt="green-vibe-img"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <!-- Img -->
+    <div class="img">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/home/banner.jpg">
+        <img src="img/home/banner-mobile.jpg" alt="green-vibe-img">
+      </picture>
+    </div>
+    <!-- Text -->
+    <div class="text">
+      <h1 class="f-d-60 f-m-55">
+        The future of construction is <span class="text-green">data driven Concrete data</span> is the foundation
+      </h1>
+      <p class="f-d-25 f-m-32">GreenVibe Concrete data like never before, enables Faster. Better. Sustainable Construction And improved  sustainability co of the concrete industry 
+      </p>
+    </div>
+    <!-- Scroll -->
+    <div class="banner-scroll"></div>
+    <!-- Circles -->
+    <div class="banner-circles">
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+      <div class="circle pulse-animation"></div>
+    </div>
+  </div>
+
+  <!-- Numbers -->
+  <div class="numbers">
+    <div class="container">
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="f-d-50 f-m-55">Every Concrete work creates waste and includes inefficiency</h2>
+        <p class="f-d-25 f-m-32">GreenVibe will reduce this by up to 50%
+          Concrete Data, for faster decision making</p>
+      </div>
+      <!-- Nums -->
+      <div class="nums">
+        <ul>
+          <!-- Item -->
+          <li>
+            <h3 class="f-d-50 f-m-55">$<span class="num">481</span> Billion 
+            </h3>
+            <p class="f-d-20 f-m-32 text-green">Cement and Aggregates</p>
+            <p class="f-d-16 f-m-26">Concrete products and cement market</p>
+          </li>
+          <!-- Item -->
+          <li>
+            <h3 class="f-d-50 f-m-55">$<span class="num">14</span>,76 Billion 
+            </h3>
+            <p class="f-d-20 f-m-32 text-green">Construction Site</p>
+            <p class="f-d-16 f-m-26">Construction market2</p>
+          </li>
+          <!-- Item -->
+          <li>
+            <h3 class="f-d-50 f-m-55">$<span class="num">21</span> Billion 
+            </h3>
+            <p class="f-d-20 f-m-32 text-green">Testing</p>
+            <p class="f-d-16 f-m-26">Testing market</p>
+          </li>
+          <!-- Item -->
+          <li>
+            <h3 class="f-d-50 f-m-55">$<span class="num">174</span> Billion 
+            </h3>
+            <p class="f-d-20 f-m-32 text-green">Concrete manufacturers</p>
+            <p class="f-d-16 f-m-26">Prefabricated building market and precast concrete market1</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <div class="process">
+    <div class="container">
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="f-d-50 f-m-55">Current Process</h2>
+        <p class="f-d-25 f-m-32">Long, complex & inaccurate process with 
+          <br>inherited heavy operation costs </p>
+      </div>
+      <!-- Slider -->
+      <div class="slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="img">
+                <img class="lazy" data-src="img/home/process.jpg" alt="green-vibe-img">
+                <h3 class="f-d-50 f-m-50">Coordinating lab and concrete supplier</h3>
+              </div>
+              <div class="text">
+                <p class="f-d-50 f-m-50 text-blue ultra-bold">1</p>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="img">
+                <img class="lazy" data-src="img/home/process.jpg" alt="green-vibe-img">
+                <h3 class="f-d-50 f-m-50">Coordinating lab and concrete supplier</h3>
+              </div>
+              <div class="text">
+                <p class="f-d-50 f-m-50 text-blue ultra-bold">2</p>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="img">
+                <img class="lazy" data-src="img/home/process.jpg" alt="green-vibe-img">
+                <h3 class="f-d-50 f-m-50">Coordinating lab and concrete supplier</h3>
+              </div>
+              <div class="text">
+                <p class="f-d-50 f-m-50 text-blue ultra-bold">3</p>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-navigation">
+            <div class="prev">
+              <img class="lazy" data-src="img/icons/chevron-left-green.svg" alt="green-vibe-img">
+            </div>
+            <div class="next">
+              <img class="lazy" data-src="img/icons/chevron-right-green.svg" alt="green-vibe-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Embed -->
+  <div class="video-embed">
+    <div class="container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oL6JxSE-Z4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="text-center">
+        <p class="f-d-20 f-m-30">
+          Credit to <a href="#" class="text-underline">CRMCA</a> 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology -->
+  <div class="technology">
+    <!-- Img -->
+    <div class="img">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/home/technology-bg.jpg">
+        <img src="img/home/technology-bg-mobile.jpg" alt="green-vibe-img">
+      </picture>
+    </div>
+    <!-- Text -->
+    <div class="text">
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="f-d-50 f-m-55"><span class="text-green">GreenVibe</span> - Technology</h2>
+        <p class="f-d-25 f-m-32">We have developed an IP-protected method to measure the concrete strength and other characteristics, that is based on a novel physical effect and a trade secret material. </p>
+        <h3 class="f-d-65 f-m-45 medium">concrete is an art
+          <br> 
+          GreenVibe is making it science</h3>
+      </div>
+      <!-- Dropdowns -->
+      <div class="dropdowns">
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Toggler -->
+          <div class="dropdown-toggler">
+            <img class="lazy" data-src="img/icons/plus-circled.svg" alt="green-vibe-img">
+          </div>
+          <!-- Menu -->
+          <div class="dropdown-menu">
+            <h3 class="f-d-25 f-m-35">Sensors–Edge Processing</h3>
+            <p class="f-d-16 f-m-30">Sensors placed inside the concrete pour on the construction site, providing measurements on the concrete strength, humidity, temperature, and conductance </p>
+          </div>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Toggler -->
+          <div class="dropdown-toggler">
+            <img class="lazy" data-src="img/icons/plus-circled.svg" alt="green-vibe-img">
+          </div>
+          <!-- Menu -->
+          <div class="dropdown-menu">
+            <h3 class="f-d-25 f-m-35">IoT Communication Box</h3>
+            <p class="f-d-16 f-m-30">The GreenVibe IoT communication Box sample, process, store & deliver the data via the Cloud.</p>
+          </div>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Toggler -->
+          <div class="dropdown-toggler">
+            <img class="lazy" data-src="img/icons/plus-circled.svg" alt="green-vibe-img">
+          </div>
+          <!-- Menu -->
+          <div class="dropdown-menu">
+            <h3 class="f-d-25 f-m-35">Cloud Segmentation</h3>
+            <p class="f-d-16 f-m-30">Data is processed in the cloud. Large amounts of raw data are used to create statistics over time, which can be used to optimize processes and assess different suppliers' concrete quality, optimize concrete mix for different constriction sites, construction speeds, and more.</p>
+          </div>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <!-- Toggler -->
+          <div class="dropdown-toggler">
+            <img class="lazy" data-src="img/icons/plus-circled.svg" alt="green-vibe-img">
+          </div>
+          <!-- Menu -->
+          <div class="dropdown-menu">
+            <h3 class="f-d-25 f-m-35">User Interface</h3>
+            <p class="f-d-16 f-m-30">The client can monitor accurate data about their on-site concrete in real-time using GreenVibe’s designated platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Benefits -->
+  <div class="benefits">
+    <div class="container">
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="f-d-65 f-m-55"><span class="text-green">GreenVibe</span> Benefits</h2>
+        <p class="f-d-20 f-m-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <!-- List -->
+      <ul>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (1).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Direct measurement</h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning</p>
+        </li>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (2).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Accuracy</h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning </p>
+        </li>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (3).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Real-time</h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning </p>
+        </li>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (4).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Over Design</h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning </p>
+        </li>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (5).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Economic </h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning </p>
+        </li>
+        <li>
+          <img class="lazy" data-src="img/home/benefits-icon (6).svg" alt="green-vibe-img">
+          <h3 class="f-d-40 f-m-35">Saving time</h3>
+          <p class="f-d-20 f-m-32">On-site concrete optimization 
+            Better construction planning </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Partners -->
+  <div class="partners">
+    <!-- Img -->
+    <div class="img">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/home/partners-bg.jpg">
+        <img src="img/home/partners-bg-mobile.jpg" alt="green-vibe-img">
+      </picture>
+    </div>
+    <!-- Text -->
+    <div class="text">
+      <h2 class="f-d-50 f-m-55">Partners</h2>
+      <p class="f-d-20 f-m-32">Ready-mix concrete ex congue porta. Nullam cursus 
+        iaculis ipsum, at suscipit purus gravida at.</p>
+      <ul>
+        <li><img src="img/home/logo (1).png" alt="green-vibe-img"></li>
+        <li><img src="img/home/logo (2).png" alt="green-vibe-img"></li>
+        <li><img src="img/home/logo (3).png" alt="green-vibe-img"></li>
+        <li><img src="img/home/logo (4).png" alt="green-vibe-img"></li>
+        <li><img src="img/home/logo (5).png" alt="green-vibe-img"></li>
+        <li><img src="img/home/logo (6).png" alt="green-vibe-img"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <!-- Img -->
+    <div class="img">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/global/footer-bg.jpg">
+        <img src="img/global/footer-bg-mobile.jpg" alt="green-vibe-img">
+      </picture>
+    </div>
+    <!-- Text -->
+    <div class="text">
+      <div class="heading">
+        <h2 class="f-d-70 f-m-55">For reducing carbon emissions 
+          decision making. <span class="text-green">Concrete Data.</span></h2>
+      </div>
+      <div class="content">
+        <div class="top">
+          <div class="footer-logo">
+            <a href="#"><img class="lazy" data-src="img/global/logo-white.svg" alt="green-vibe-img"></a>
+            <p class="f-d-25 f-m-30 medium">
+              Haenergia 77 , Beer Sheva, Israel 
+              <br>info@greenvibe.io  (+972) 585656560
+            </p>
+          </div>
+        </div>
+        <div class="bottom">
+          <a href="https://portfolio.elevate.co.il/" target="_blank" class="f-d-16 f-m-30">@ 2022 design by elevate</a>
+          <ul class="footer-links f-d-16 f-m-30">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">process</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">stories</a></li>
+            <li><a href="#">careers</a></li>
+          </ul>
+          <p class="f-d-16 f-m-30">copyright GreenVibe, 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Script (Vendor) -->
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
 
   <!-- Script -->
+  <script src="js/elevate-framework.js"></script>
   <script src="js/app.js"></script>
 
   <!-- Lazy Loading -->
