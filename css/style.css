@@ -16,8 +16,8 @@ body {
 /* #Pulse Animation
 ================================================== */
 .circle.pulse-animation {
-  width: .67vw;
-  height: .67vw;
+  width: 1vw;
+  height: 1vw;
   border-radius: 50%;
   background-color: white;
 }
@@ -45,12 +45,12 @@ body {
   animation-delay: 1.25s;
 }
 
-.benefits .pulse-animation::after,
-.benefits .pulse-animation::before {
+.banner .pulse-animation::after,
+.banner .pulse-animation::before {
   animation: animateXl 2.5s linear infinite;
 }
 
-.benefits .pulse-animation::after {
+.banner .pulse-animation::after {
   animation-delay: 1.25s;
 }
 
@@ -99,11 +99,115 @@ body {
   padding: 0 2vw;
   border-radius: 500px;
   border: 1px solid transparent;
-  transition: border .4s ease;
+  transition: border .4s ease, color .4s ease;
+  overflow: hidden;
 }
 
-.btn.btn-primary {
+.btn-primary {
+  color: white;
+  padding: 0;
   border-color: white;
+}
+
+.btn-primary:hover {
+  color: #114352;
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 2.6vw;
+  font-size: 1.04vw;
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: hidden;
+  font-size: inherit;
+}
+
+.btn-primary span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateY(100%);
+  transition: all .4s ease;
+  z-index: -1;
+  backface-visibility: hidden;
+}
+
+.btn-primary:hover span::before {
+  transform: translateY(0);
+}
+
+.header.header-scrolled .btn-primary {
+  color: #114352;
+}
+
+.header.header-scrolled .btn-primary:hover {
+  color: white;
+}
+
+.header.header-scrolled .btn-primary span::before {
+  background-color: #114352;
+}
+
+/* #Link
+================================================== */
+.link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: .15vw;
+}
+
+.link img,
+.link svg {
+  width: 1vw;
+  margin-right: .6vw;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #114352;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+.link.link-white::before {
+  background-color: white;
+}
+
+.header.header-scrolled .link.link-white::before {
+  background-color: black;
+}
+
+@media (max-width: 1023.98px) {
+  .link {
+    padding-bottom: 1vw;
+  }
+
+  .link img,
+  .link svg {
+    width: 2.93vw;
+    margin-right: 1.33vw;
+  }
 }
 
 /* #Header
@@ -133,7 +237,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 92%;
-  height: 7.8vw;
+  padding: 2vw 0;
+  transition: padding .4s ease;
+}
+
+.header.header-scrolled .container {
+  padding: 1.5vw 0;
 }
 
 .header a {
@@ -174,6 +283,10 @@ body {
     width: 88%;
     height: auto;
     padding: 5vw 0;
+  }
+  
+  .header.header-scrolled .container {
+    padding: 3vw 0;
   }
   
   .header-logo img {
@@ -656,6 +769,10 @@ body {
 
 /* #Process
 ================================================== */
+.process {
+  overflow: hidden;
+}
+
 .process .heading {
   text-align: center;
   margin-bottom: 2.6vw;
@@ -827,6 +944,7 @@ body {
 ================================================== */
 .technology {
   position: relative;
+  overflow: hidden;
 }
 
 .technology .img img,
@@ -841,6 +959,7 @@ body {
   transform: translateX(-50%);
   color: white;
   width: 100%;
+  z-index: 2;
 }
 
 .technology .heading {
@@ -878,6 +997,17 @@ body {
 .technology .dropdown .dropdown-menu p {
   line-height: 1.375;
   margin-top: .5vw;
+}
+
+.technology .circle.pulse-animation {
+  width: 34.9vw;
+  height: 34.9vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 23vw;
+  background-color: transparent;
+  border: 1px solid #C5E8D8;
 }
 
 @media (min-width: 1024px) {
@@ -1003,5 +1133,11 @@ body {
     background-color: #F1F9F9;
     color: #009999;
     padding: 3vw;
+  }
+
+  .technology .circle.pulse-animation {
+    width: 89vw;
+    height: 89vw;
+    top: 60vw;
   }
 }

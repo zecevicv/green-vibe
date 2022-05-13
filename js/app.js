@@ -78,3 +78,12 @@ if (document.querySelector('.process')) {
     }
   });
 }
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});
