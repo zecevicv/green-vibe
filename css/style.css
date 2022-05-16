@@ -92,7 +92,7 @@ body {
 /* #Buttons
 ================================================== */
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 2.6vw;
@@ -104,13 +104,13 @@ body {
 }
 
 .btn-primary {
-  color: white;
+  color: #114352;
   padding: 0;
-  border-color: white;
+  border-color: #114352;
 }
 
 .btn-primary:hover {
-  color: #114352;
+  color: white!important;
 }
 
 .btn-primary span {
@@ -135,7 +135,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #114352;
   transform: translateY(100%);
   transition: all .4s ease;
   z-index: -1;
@@ -146,19 +146,27 @@ body {
   transform: translateY(0);
 }
 
-.header.header-scrolled .btn-primary,
+.header:not(.header-scrolled) .btn-primary {
+  color: white;
+  border-color: white;
+}
+
 .header.header-always-white .btn-primary {
   color: #114352;
+  border-color: #114352;
 }
 
-.header.header-scrolled .btn-primary:hover,
-.header.header-always-white .btn-primary:hover {
-  color: white;
-}
-
-.header.header-scrolled .btn-primary span::before,
-.header.header-always-white .btn-primary span::before {
-  background-color: #114352;
+@media (max-width: 1023.98px) {
+  .btn {
+    height: 10.8vw;
+    padding: 0 8.66vw;
+  }
+  
+  .btn-primary span {
+    height: 10.8vw;
+    font-size: 4.26vw;
+    padding: 0 8.66vw;
+  }
 }
 
 /* #Link
@@ -167,13 +175,13 @@ body {
   display: inline-flex;
   align-items: center;
   position: relative;
-  padding-bottom: .15vw;
+  padding-bottom: .4vw;
 }
 
 .link img,
 .link svg {
-  width: 1vw;
-  margin-right: .6vw;
+  width: .6vw;
+  margin-right: .78vw;
 }
 
 .link::before {
@@ -209,8 +217,8 @@ body {
 
   .link img,
   .link svg {
-    width: 2.93vw;
-    margin-right: 1.33vw;
+    width: 2vw;
+    margin-right: 4vw;
   }
 }
 
@@ -255,11 +263,6 @@ body {
 
 .header.header-scrolled {
   box-shadow: 0 3px 25px #1143522b;
-}
-
-.header.header-scrolled .btn.btn-primary,
-.header.header-always-white .btn.btn-primary {
-  border-color:#114352;
 }
 
 .header .container {
@@ -1400,5 +1403,92 @@ body {
   .story .author img {
     width: 11.46vw;
     margin-right: 2.66vw;
+  }
+}
+
+/* #Job
+================================================== */
+.job {
+  padding: 10.15vw 0 7vw 0;
+  background-image: url('../img/home/benefits-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 15vw;
+}
+
+.job .container {
+  width: 33.6%;
+}
+
+.job .heading {
+  margin-bottom: 2vw;
+}
+
+.job h1 {
+  margin: 1.5vw 0 .5vw 0;
+}
+
+.job h2 {
+  border-bottom: 1px solid #114352;
+  margin-bottom: 1.5vw;
+}
+
+.job .group {
+  margin-bottom: 2.34vw;
+}
+
+.job ul {
+  list-style: initial;
+  padding-left: 19px;
+}
+
+.job li:not(:last-child) {
+  margin-bottom: .25vw;
+}
+
+.job ul,
+.job p {
+  line-height: 1.5;
+}
+
+@media (max-width: 1023.98px) {
+  .job {
+    padding: 26.66vw 0 21vw 0;
+    background-image: none;
+  }
+  
+  .job .container {
+    width: 86.6%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job .heading {
+    margin-bottom: 8vw;
+  }
+  
+  .job h1 {
+    margin: 4vw 0 2.66vw 0;
+  }
+  
+  .job h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .job .group {
+    margin-bottom: 8vw;
+  }
+  
+  .job li:not(:last-child) {
+    margin-bottom: 1.33vw;
+  }
+  
+  .job ul,
+  .job p {
+    line-height: 1.3;
+  }
+
+  .job .btn {
+    margin: 0 auto;
   }
 }
