@@ -1492,3 +1492,135 @@ body {
     margin: 0 auto;
   }
 }
+
+/* #Jobs Page
+================================================== */
+.jobs-page .banner .text {
+  width: 46vw;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-page .banner .text {
+    width: 99%;
+  }
+}
+
+/* #Jobs
+================================================== */
+.jobs {
+  padding: 3.38vw 0 7.55vw 0;
+}
+
+.jobs .container {
+  width: 65.35%;
+}
+
+.jobs .tab-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4.17vw;
+}
+
+.jobs .tab-btn:not(:last-child) {
+  margin-right: 3.9vw;
+}
+
+.jobs .tab-btn.active {
+  border-bottom: 1px solid #114352;
+}
+
+.jobs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -2vw -3.38vw -2vw;
+}
+
+.job-item {
+  flex: 0 0 33.3333%;
+  text-align: center;
+  padding: 3.38vw 2vw;
+}
+
+.job-item > div {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding-top: 5.2vw;
+  position: relative;
+}
+
+.job-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.9vw;
+  background-color: #F1F9F9;
+  margin-top: 1vw;
+}
+
+.job-item p {
+  margin-top: 1.8vw;
+}
+
+.job-item img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8.33vw;
+  width: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs {
+    padding: 9.33vw 0 16.66vw 0;
+  }
+  
+  .jobs .container {
+    width: 100%;
+  }
+  
+  .jobs .tab-navigation ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .jobs .tab-btn:not(:last-child) {
+    margin-right: 5vw;
+  }
+  
+  .jobs .tab-btn.active {
+    border-bottom: 1px solid #114352;
+  }
+  
+  .jobs-list {
+    display: block;
+    margin: 0;
+    padding: 13.33vw 5% 0 5%;
+  }
+  
+  .job-item {
+    text-align: center;
+    padding: 13.33vw 0;
+  }
+  
+  .job-item > div {
+    padding-top: 24.66vw;
+  }
+  
+  .job-item a {
+    height: 13.33vw;
+    margin-top: 4vw;
+  }
+  
+  .job-item p {
+    margin-top: 6vw;
+  }
+  
+  .job-item img {
+    height: 38.66vw;
+  }
+}
