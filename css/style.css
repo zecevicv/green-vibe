@@ -6,7 +6,7 @@ body {
 }
 
 .text-green {
-  color: #C5E8D8;
+  color: #009999;
 }
 
 .text-underline {
@@ -160,12 +160,18 @@ body {
   .btn {
     height: 10.8vw;
     padding: 0 8.66vw;
+    min-width: 38.93vw;
   }
   
   .btn-primary span {
     height: 10.8vw;
     font-size: 4.26vw;
     padding: 0 8.66vw;
+    width: 100%;
+  }
+
+  .btn.btn-primary {
+    padding: 0;
   }
 }
 
@@ -1622,5 +1628,170 @@ body {
   
   .job-item img {
     height: 38.66vw;
+  }
+}
+
+/* #Who we are
+================================================== */
+.who-we-are {
+  text-align: center;
+  padding: 11.2vw 0 9.6vw 0;
+  position: relative
+}
+
+.who-we-are .container {
+  width: 40.41vw;
+  line-height: 1.5;
+}
+
+.who-we-are .img {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.who-we-are .img img {
+  width: 32vw;
+}
+
+@media (max-width: 1023.98px) {
+  .who-we-are {
+    padding: 22vw 0 23.5vw 0;
+  }
+  
+  .who-we-are .container {
+    width: 88.6%;
+    line-height: 1.3;
+  }
+
+  .who-we-are h2 {
+    margin-bottom: 2vw;
+  }
+  
+  .who-we-are .img {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+  
+  .who-we-are .img img {
+    width: 100%;
+  }
+}
+
+/* #About Img
+================================================== */
+.about-img img {
+  margin: 0 auto;
+  width: 64.5vw;
+  height: 33.85vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .about-img img {
+    width: 87.46vw;
+    height: 68.8vw;
+  }
+}
+
+/* #Team
+================================================== */
+.team {
+  text-align: center;
+  padding: 6.35vw 0 0 0;
+}
+
+.team .container {
+  width: 64.5%;
+}
+
+.team h2 {
+  margin-bottom: 4.16vw;
+}
+
+.team ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5.2vw -2.6vw 0 -2.6vw;
+}
+
+.team ul li {
+  flex: 0 0 33.33333%;
+  padding: 5.2vw 2.6vw 0 2.6vw;
+}
+
+.team .img {
+  width: 100%;
+  height: 17vw;
+  background-color: #F1F9F9;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  margin-bottom: 1.8vw;
+}
+
+.team .img img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 19.11vw;
+}
+
+@media (max-width: 1023.98px) {
+  .team {
+    padding: 13.33vw 0 0 0;
+  }
+  
+  .team .container {
+    width: 87.4%;
+  }
+  
+  .team h2 {
+    margin-bottom: 20vw;
+  }
+  
+  .team ul {
+    display: block;
+    margin: -18vw 0 0 0;
+  }
+  
+  .team ul li {
+    padding: 18vw 0 0 0;
+  }
+  
+  .team .img {
+    height: 63vw;
+    margin-bottom: 5vw;
+  }
+  
+  .team .img img {
+    height: 71.86vw;
+  }
+}
+
+/* #Join Team
+================================================== */
+.join-team {
+  text-align: center;
+  padding: 7.3vw 0;
+}
+
+.join-team h2 {
+  margin-bottom: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .join-team {
+    padding: 21.86vw 0;
+  }
+  
+  .join-team h2 {
+    margin-bottom: 5vw;
   }
 }
