@@ -13,6 +13,10 @@ body {
   color: #C5E8D8
 }
 
+.text-red {
+  color: #FF0000;
+}
+
 .text-underline {
   text-decoration: underline;
 }
@@ -107,6 +111,7 @@ body {
   overflow: hidden;
 }
 
+/* Primary */
 .btn-primary {
   color: #009999;
   padding: 0;
@@ -160,6 +165,51 @@ body {
   border-color: #009999;
 }
 
+/* Secondary */
+.btn-secondary {
+  color: #009999;
+  padding: 0;
+  border-color: white;
+  background-color: white;
+}
+
+.btn-secondary:hover {
+  color: white!important;
+}
+
+.btn-secondary span {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 2.6vw;
+  font-size: 1.04vw;
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: hidden;
+  font-size: inherit;
+}
+
+.btn-secondary span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009999;
+  transform: translateY(100%);
+  transition: all .4s ease;
+  z-index: -1;
+  backface-visibility: hidden;
+}
+
+.btn-secondary:hover span::before {
+  transform: translateY(0);
+}
+
 @media (max-width: 1023.98px) {
   .btn {
     height: 10.8vw;
@@ -167,6 +217,7 @@ body {
     min-width: 38.93vw;
   }
   
+  /* Primary */
   .btn-primary span {
     height: 10.8vw;
     font-size: 4.26vw;
@@ -175,6 +226,18 @@ body {
   }
 
   .btn.btn-primary {
+    padding: 0;
+  }
+
+  /* Secondary */
+  .btn-secondary span {
+    height: 10.8vw;
+    font-size: 4.26vw;
+    padding: 0 8.66vw;
+    width: 100%;
+  }
+
+  .btn.btn-secondary {
     padding: 0;
   }
 }
@@ -247,8 +310,23 @@ body {
   color: #114352;
 }
 
+.input-secondary {
+  font-family: inherit;
+  padding-bottom: .5vw;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.input-secondary::placeholder {
+  color: white;
+}
+
 @media (max-width: 1023.98px) {
-  .input-primary {
+  .input-primary,
+  .input-secondary {
     padding-bottom: 2.66vw;
   }
 }
@@ -1912,5 +1990,284 @@ body {
   
   .error p {
     margin: 2vw 0 8vw 0;
+  }
+}
+
+/* #Sustainability Contact
+================================================== */
+.sustainability-page .contact {
+  padding: 3.65vw 0 4.68vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .sustainability-page .contact {
+    padding: 4.66vw 0 14.66vw 0;
+  }
+}
+
+/* #Sustainability Text
+================================================== */
+.sustainability-text {
+  text-align: center;
+  padding: 6.25vw 0 5.2vw 0;
+}
+
+.sustainability-text .container {
+  width: 46%;
+}
+
+.sustainability-text h2 {
+  margin-bottom: 1.5vw;
+}
+
+.sustainability-text p {
+  line-height: 1.5;
+}
+
+@media (max-width: 1023.98px) {
+  .sustainability-text {
+    text-align: center;
+    padding: 12vw 0 10vw 0;
+  }
+  
+  .sustainability-text .container {
+    width: 97%;
+  }
+  
+  .sustainability-text h2 {
+    margin-bottom: 5vw;
+  }
+  
+  .sustainability-text p {
+    line-height: 1.3;
+    padding: 0 3vw;
+  }
+}
+
+/* #Sustainability Cards
+================================================== */
+.sustainability-cards .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sustainability-cards .card {
+  position: relative;
+  width: 40.3vw;
+}
+
+.sustainability-cards .card:first-child {
+  margin-right: 2vw;
+}
+
+.sustainability-cards .card .img img {
+  width: 100%;
+}
+
+.sustainability-cards .card .text {
+  position: absolute;
+  top: 3.65vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33vw;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sustainability-cards .card .input-secondary {
+  margin-top: 2.34vw;
+  margin-bottom: .25vw;
+}
+
+.sustainability-cards .btn {
+  margin: 1.8vw 0 .78vw 0;
+}
+
+.sustainability-cards .circle {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sustainability-cards .card-1 .circle {
+  margin-top: 2vw;
+}
+
+.sustainability-cards .card-2 .circle {
+  margin-top: 3.2vw;
+}
+
+.sustainability-cards h2 {
+  line-height: 1.25;
+}
+
+.sustainability-cards .range-slider {
+  width: 100%;
+  margin-top: 1.8vw;
+}
+
+.sustainability-cards .range-slider .imgs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.sustainability-cards .range-slider .imgs img {
+  width: 2.2vw;
+  height: 2.65vw;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+/* Range Slider */
+.rs-container {
+  height: 3.5vw;
+  margin-top: 1.8vw;
+  padding-right: 4vw;
+}
+
+.rs-container .rs-scale {
+  display: none;
+}
+
+.rs-container .rs-bg, .rs-container .rs-selected {
+  height: 2vw;
+  border-radius: 2vw;
+}
+
+.rs-container .rs-selected {
+  background-color: #C5E8D8;
+  border: 1px solid #C5E8D8;
+}
+
+.rs-container .rs-pointer {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  height: 3.5vw;
+  width: 3.5vw;
+  left: -10px;
+  top: -.45vw;
+}
+
+.rs-container .rs-pointer::before {
+  width: 1.45vw;
+  height: 1.45vw;
+  border-radius: 50%;
+  background-color: #C5E8D8;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rs-container .rs-pointer::after {
+  display: none;
+}
+
+@media (max-width: 1023.98px) {
+  .sustainability-cards .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sustainability-cards .card {
+    width: 88%;
+  }
+  
+  .sustainability-cards .card:first-child {
+    margin-right: 0;
+    margin-top: 5.33vw;
+  }
+
+  .sustainability-cards .card .img img {
+    width: 100%;
+    height: 160vw;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  
+  .sustainability-cards .card .text {
+    top: 10.66vw;
+    width: 76.66vw;
+  }
+  
+  .sustainability-cards .card .input-secondary {
+    margin-top: 6.65vw;
+    margin-bottom: 2vw;
+  }
+  
+  .sustainability-cards .btn {
+    margin: 6.65vw 0 2vw 0;
+  }
+  
+  .sustainability-cards .circle {
+    width: 37.73vw;
+    height: 37.73vw;
+  }
+  
+  .sustainability-cards .card-1 .circle {
+    margin-top: 6.65vw;
+  }
+  
+  .sustainability-cards .card-2 .circle {
+    margin-top: 5.33vw;
+  }
+  
+  .sustainability-cards h2 {
+    line-height: 1.13;
+  }
+
+  .sustainability-cards .card-1 h2 {
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  .sustainability-cards .range-slider {
+    width: 100%;
+    margin-top: 8vw;
+  }
+  
+  .sustainability-cards .range-slider .imgs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .sustainability-cards .range-slider .imgs img {
+    width: 9vw;
+    height: 11vw;
+  }
+
+  /* Range Slider */
+  .rs-container {
+    height: 10vw;
+    margin-top: 3.33vw;
+  }
+
+  .rs-container .rs-bg, .rs-container .rs-selected {
+    height: 3.33vw;
+    border-radius: 5.33vw;
+  }
+  
+  .rs-container .rs-pointer {
+    height: 10vw;
+    width: 10vw;
+    top: -2vw;
+  }
+  
+  .rs-container .rs-pointer::before {
+    width: 5.86vw;
+    height: 5.86vw;
   }
 }

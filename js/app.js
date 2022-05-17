@@ -87,3 +87,17 @@ AOS.init({
   duration: 800,
   offset: 300,
 });
+
+/* #Range Slider
+  ======================================================= */
+if (document.querySelector('#rangeSlider')) {
+  var rangeSLider = new rSlider({
+    target: '#rangeSlider',
+    values: [1, 2, 3],
+    range: false,
+    tooltip: false,
+    scale: false,
+    labels: false,
+    set: [2]
+  });
+}
