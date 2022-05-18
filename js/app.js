@@ -91,6 +91,7 @@ AOS.init({
 /* #Range Slider
   ======================================================= */
 if (document.querySelector('#rangeSlider')) {
+  let sliderVal = document.querySelector('.range-slider .val');
   var rangeSLider = new rSlider({
     target: '#rangeSlider',
     values: [1, 2, 3],
@@ -98,6 +99,9 @@ if (document.querySelector('#rangeSlider')) {
     tooltip: false,
     scale: false,
     labels: false,
-    set: [2]
+    set: [2],
+    onChange: function(vals) {
+      sliderVal.innerHTML = vals;
+    }
   });
 }
