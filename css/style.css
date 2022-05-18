@@ -2271,3 +2271,57 @@ body {
     height: 5.86vw;
   }
 }
+
+/* #Gallery
+================================================== */
+.gallery {
+  padding-bottom: 6.77vw;
+  text-align: center;
+}
+
+.gallery .container {
+  width: 91%;
+}
+
+.gallery h2 {
+  margin-bottom: 4.4vw;
+}
+
+.gallery .hes-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.67vw;
+}
+
+.gallery .hes-gallery .img {
+  flex: 0 0 50%;
+  padding: .67vw;
+}
+
+.gallery .hes-gallery .img img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .gallery {
+    padding-bottom: 17.33vw;
+  }
+  
+  .gallery .container {
+    width: 91%;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 8vw;
+  }
+  
+  .gallery .hes-gallery {
+    display: block;
+    margin: 0;
+  }
+  
+  .gallery .hes-gallery .img {
+    padding: 0;
+    margin-bottom: 4vw;
+  }
+}
