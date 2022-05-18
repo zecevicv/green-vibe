@@ -63,7 +63,6 @@ ScrollTrigger.create({
   ======================================================= */
 if (document.querySelector('.process')) {
   swiper = new Swiper(".process .swiper", {
-    loop: true,
     navigation: {
       nextEl: ".process .next",
       prevEl: ".process .prev",
@@ -94,7 +93,8 @@ if (document.querySelector('#rangeSlider')) {
   let sliderVal = document.querySelector('.range-slider .val');
   var rangeSLider = new rSlider({
     target: '#rangeSlider',
-    values: [1, 2, 3],
+    values:  {min: 1, max: 500},
+    step: 1,
     range: false,
     tooltip: false,
     scale: false,
