@@ -551,6 +551,18 @@ body {
 .banner-circles .circle:nth-child(7) {top: 40.4vw; left: 74.16vw;}
 .banner-circles .circle:nth-child(8) {top: 36.45vw; left: 92.86vw;}
 
+.banner-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.banner-mask img,
+.banner-mask picture {
+  width: 100%;
+}
+
 @media (max-width: 1023.98px) {
   .banner .text {
     top: 40%;
